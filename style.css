@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content  : center;
+    min-height: min-content;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator > button {
+    font-size: large;
+    border: 1px solid black;
+    background-color: aqua;
+    outline: none;
+}
+
+.calculator > button:hover {
+    background-color: white;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.span-four {
+    width: 100%;
+    height: 120px;
+}
+
+.display-screen {
+    grid-column: 1 / -1;
+    background-color: azure;
+}
